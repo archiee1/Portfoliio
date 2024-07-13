@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f8da4e4de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+             <nav>
+                <img src="./Images/imglogo(1)(1).png" class="logo"> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                <p>Cloud Practitioner</p>
+                <h1>Hi, I'm <span>Archie</span><br> Nagdev</h1>
+             </div>
+        </div>
+    </div>
+<!-- ---about--- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/img1.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Archie Nagdev, a final year student at Gyan Ganga College of Technology and a certified AWS Cloud Practitioner. I specialize in web development with skills in HTML, CSS and JavaScript and React. 
+                Scroll down to learn more about my work and projects
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Cloud Practitioner</span><br>Providing compute services</li>
+                        <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>April 2024 - Current</span><br>Technical Content Writer at GFG</li>
+                        <li><span>Nov 2023 - Dec 2023</span><br>Web Designer Intern at Oasis</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2025</span><br>BTech in Computer Science</li>
+                        <li><span>2021</span><br>12th from St. Joseph's Convent</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------services---- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Technical Writer</h2>
+                    <p>Leverage my experience as a technical writer at GFG communicate complex AWS cloud concepts. Whether it's documentation, tutorials, or in-depth articles, I create content that educates and engages your audience. </p>
+                    <a href="https://www.geeksforgeeks.org/aws-vpc-route-table/?itm_source=auth&itm_medium=contributions&itm_campaign=articles">My Articles</a>
+                </div>
+                
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>From creating dynamic web applications to ensuring responsive design, I specialize in building websites that are both functional and aesthetically pleasing. Delivering user-friendly and high-performance web solutions tailored to your needs. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>                
+                <h2>Cloud Services</h2>
+                <p>Harness the power of cloud computing with my expertise in AWS. Whether you need infrastructure setup, migration, or optimization. Let's make your cloud journey seamless and efficient. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <!-- <div>
+                <i class="fa-brands fa-app-store-ios"></i>                
+                <h2>UI/UX</h2>
+                <p>A great user experience is key to engaging and retaining users. I focus on creating intuitive and visually appealing interfaces that enhance user satisfaction and interaction. Let’s work together to design digital experiences that are both beautiful and easy to navigate. </p>
+                <a href="#">Learn more</a>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<!-- -----portfolio----- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">
+            My Work
+        </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./Images/image1.png" alt="">
+                <div class="layer">
+                    <h3>Ecommerce Web Design</h3>
+                    <p>A web design for an ecommerce website</p>
+                    <a href="https://github.com/archiee1"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/image1.png" alt="">
+                <div class="layer">
+                    <h3>Serverless Web Application</h3>
+                    <p>A web application hosted on Amazon S3 using serverless compute service AWS Lambda</p>
+                    <a href="https://github.com/archiee1/Serverless-Web-Application-on-AWS"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <!-- <div class="work">
+                <img src="" alt="">
+                <h3></h3>
+                <p></p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div> -->
+        </div>
+        <a href="#" class="btn"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+</div>
+
+<!-- --------contact----- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>archie.nagdev01@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9516307599</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/archie-nagdev-221136226/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="ArchieNagdevResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <Button type="button" class="btn btn2">Submit</Button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Archie 2024</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyQY-EedPbngjxSQe9UbXHL0K1Zo2ttDz0stCaWRVjLloP0Um9W5z2eUZ7bHLivevPk/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Messaage sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
